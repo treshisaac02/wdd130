@@ -1,3 +1,18 @@
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #36454f;
+  padding: 1rem;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+
 main {
   max-width: 840px;
 }
@@ -9,6 +24,14 @@ img {
 
 main img {
   width: 150px;
+  height: auto;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 2px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.2);
+}
+
+h1 {
+  color: #333;
 }
 
 aside {
