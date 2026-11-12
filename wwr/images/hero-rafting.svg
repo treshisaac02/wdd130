@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">River rafting hero scene</title>
+  <desc id="desc">A stylized whitewater rafting scene with a river canyon and a raft</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#cfe9ff"/>
+      <stop offset="100%" stop-color="#eaf7ff"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2d9cc2"/>
+      <stop offset="100%" stop-color="#0a4e6d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <path d="M0 430c180-80 280-100 420-80 150 20 250 78 390 62 110-12 178-65 390-64v352H0z" fill="#a7c28e"/>
+  <path d="M0 510c160-20 314-12 458 8 140 18 182 64 340 68 195 5 231-72 402-66v185H0z" fill="url(#river)"/>
+  <path d="M120 530c160 38 260 36 440-16 130-37 210-90 350-78 102 9 180 50 290 42v72H120z" fill="#55bfd7" opacity="0.6"/>
+  <path d="M140 542c155 64 233 74 422 42 110-19 208-76 348-60 117 13 154 57 290 54v90H140z" fill="#7ad5ef" opacity="0.8"/>
+  <g transform="translate(320,420)">
+    <ellipse cx="190" cy="70" rx="230" ry="28" fill="#203c41" opacity="0.25"/>
+    <path d="M20 70h340c18 0 34 16 34 34v12H0v-12c0-18 16-34 34-34z" fill="#b3632f"/>
+    <path d="M70 28c24 26 69 42 120 42s96-16 120-42v10c-24 27-69 43-120 43s-96-16-120-43z" fill="#d98b43"/>
+    <path d="M78 72l16-34 46 20 13 14H78z" fill="#f2d4ae"/>
+    <path d="M236 72l-16-34-46 20-13 14h75z" fill="#f2d4ae"/>
+    <path d="M150 28l-12 60h24l-14-60z" fill="#3d2b1f"/>
+    <path d="M232 28l12 60h-24l12-60z" fill="#3d2b1f"/>
+    <path d="M160 30c7-12 18-18 30-18s23 6 30 18" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="110" cy="86" r="11" fill="#f9c78f"/>
+    <circle cx="292" cy="86" r="11" fill="#f9c78f"/>
+    <path d="M100 112c10-8 29-14 42-16" stroke="#1e2f35" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M290 96c-10-8-29-14-42-16" stroke="#1e2f35" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(900,145)">
+    <circle cx="36" cy="36" r="36" fill="#f4d35e" opacity="0.8"/>
+    <path d="M26 56h20l8 20H18z" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>

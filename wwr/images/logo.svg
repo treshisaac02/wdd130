@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-labelledby="title desc">
+  <title id="title">Rapid River Adventures Logo</title>
+  <desc id="desc">A river-themed logo with a circular badge and wave</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1">
+      <stop offset="0%" stop-color="#b2e4ff"/>
+      <stop offset="100%" stop-color="#f6fbff"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="120" rx="18" fill="#0d5c63"/>
+  <circle cx="60" cy="60" r="36" fill="url(#sky)"/>
+  <path d="M28 60c9-10 17-12 26-12s17 2 26 12" fill="none" stroke="#0d5c63" stroke-width="5" stroke-linecap="round"/>
+  <path d="M26 74c9 10 18 14 34 14 20 0 28-8 34-14" fill="none" stroke="#f4d35e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M96 32h88v12H96zm0 18h108v12H96zm0 18h86v12H96z" fill="#f4d35e"/>
+  <path d="M99 82h102v8H99z" fill="#9ad9d5"/>
+</svg>

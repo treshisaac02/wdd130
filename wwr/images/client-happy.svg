@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 160" role="img" aria-labelledby="title desc">
+  <title id="title">Happy river guide</title>
+  <desc id="desc">A smiling rafting guide with a jacket and paddle</desc>
+  <rect width="220" height="160" fill="#dfeef8"/>
+  <circle cx="105" cy="54" r="28" fill="#f7d9b8"/>
+  <path d="M80 56c2-20 18-32 35-32s33 12 35 32l-6 20H86z" fill="#1f2933"/>
+  <path d="M60 104l18-23 26 18 16-16 26 24 18-16 18 33c-7 7-18 12-31 12H90c-15 0-26-6-30-15z" fill="#0d5c63"/>
+  <path d="M88 76l-12 38h18l8-30z" fill="#f7d9b8"/>
+  <path d="M120 76l14 38h-20l-8-30z" fill="#f7d9b8"/>
+  <circle cx="95" cy="54" r="3" fill="#1f2933"/>
+  <circle cx="115" cy="54" r="3" fill="#1f2933"/>
+  <path d="M98 63c8 6 18 6 26 0" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <path d="M168 86c16 0 26 10 26 21v5h-34l8-26z" fill="#f4d35e"/>
+  <path d="M157 80l28-28 14 10-20 24z" fill="#f4d35e"/>
+</svg>
