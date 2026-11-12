@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rapid River Adventures | Contact</title>
+    <meta name="description" content="Contact Rapid River Adventures in Rumuokwuta, Port Harcourt, Rivers State, Nigeria, to plan your next rafting trip.">
+    <meta name="author" content="Isaac Edward Oko-Jaja">
+    <link rel="stylesheet" href="styles/rafting.css">
+  </head>
+  <body class="contact-page">
+    <header>
+      <img src="images/logo.svg" alt="Rapid River Adventures logo">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-intro">
+        <h1>Contact Rapid River Adventures</h1>
+        <p>Planning a rafting trip in Rivers State? Contact our team or send your trip inquiry on WhatsApp.</p>
+      </section>
+
+      <div class="contact-layout">
+        <section class="contact-details" aria-labelledby="contact-details-heading">
+          <h2 id="contact-details-heading">Get in touch</h2>
+          <p>Talk with us about trip options, dates, and group bookings.</p>
+          <address>
+            <p><strong>Location</strong><br>Government Girls Secondary School, Rumuokwuta, Port Harcourt, Rivers State, Nigeria</p>
+            <p><strong>Phone</strong><br><a href="tel:+2348038951255">+234 803 895 1255</a></p>
+            <p><strong>Email</strong><br><a href="mailto:davnimi33@gmail.com">davnimi33@gmail.com</a></p>
+          </address>
+          <a class="btn primary whatsapp-link" href="https://wa.me/2348038951255?text=Hello%20Rapid%20River%20Adventures%2C%20I%27d%20like%20to%20ask%20about%20a%20rafting%20trip." target="_blank" rel="noopener noreferrer">Chat with us on WhatsApp</a>
+        </section>
+
+        <section class="contact-form-panel" aria-labelledby="inquiry-heading">
+          <h2 id="inquiry-heading">Send a trip inquiry</h2>
+          <p>Complete the form to continue to WhatsApp. Review your message there, then tap Send.</p>
+          <form id="inquiry-form">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="phone">Your phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+            <label for="trip">Trip interest</label>
+            <select id="trip" name="trip" required>
+              <option value="" selected disabled>Choose an option</option>
+              <option>Family Float</option>
+              <option>Rapid Rush</option>
+              <option>Private Expedition</option>
+              <option>Not sure yet</option>
+            </select>
+
+            <label for="date">Preferred date (optional)</label>
+            <input id="date" name="date" type="date">
+
+            <label for="group-size">Group size</label>
+            <input id="group-size" name="group-size" type="number" min="1" value="1" required>
+
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn primary" type="submit">Continue to WhatsApp</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 | Rapid River Adventures | Isaac Edward Oko-Jaja</p>
+      <nav class="socialmedia" aria-label="Social media links">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/facebook.svg" alt="Facebook icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.svg" alt="LinkedIn icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/instagram.svg" alt="Instagram icon">
+        </a>
+      </nav>
+    </footer>
+
+    <script>
+      const inquiryForm = document.querySelector("#inquiry-form");
+
+      inquiryForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(inquiryForm);
+        const message = [
+          "Hello Rapid River Adventures, I'd like to plan a rafting trip.",
+          `Name: ${formData.get("name")}`,
+          `Email: ${formData.get("email")}`,
+          `Phone: ${formData.get("phone") || "Not provided"}`,
+          `Trip interest: ${formData.get("trip")}`,
+          `Preferred date: ${formData.get("date") || "Flexible"}`,
+          `Group size: ${formData.get("group-size")}`,
+          `Message: ${formData.get("message")}`
+        ].join("\n");
+        const whatsappUrl = `https://wa.me/2348038951255?text=${encodeURIComponent(message)}`;
+        window.location.assign(whatsappUrl);
+      });
+    </script>
+  </body>
+</html>

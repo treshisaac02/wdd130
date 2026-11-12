@@ -23,7 +23,7 @@ body {
 header,
 main,
 footer {
-  width: 840px;
+  width: min(840px, 100%);
   margin: 0 auto;
 }
 
@@ -124,9 +124,29 @@ header {
   box-shadow: 0 4px 12px rgba(31, 41, 51, 0.08);
 }
 
+.trip-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.trip-card p {
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
+
+.trip-card a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 .feature-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(13,92,99,0.06));
   text-align: center;
+}
+
+.feature-grid .feature-card,
+.trip-grid .trip-card,
+.trip-planning article {
+  margin: 0;
 }
 
 .feature-icon {
@@ -485,4 +505,148 @@ footer p {
 .back-to-top {
   text-align: right;
   margin-top: 1rem;
+}
+
+.contact-main {
+  padding: 1.5rem 1rem 2rem;
+}
+
+.contact-intro {
+  margin: 0 0 1.25rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(13, 92, 99, 0.06);
+  border: 1px solid rgba(13, 92, 99, 0.12);
+  border-radius: 14px;
+}
+
+.contact-intro h1 {
+  position: static;
+  width: auto;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  opacity: 1;
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.contact-intro p,
+.contact-details p,
+.contact-form-panel > p {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.contact-details,
+.contact-form-panel {
+  margin: 0;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(13, 92, 99, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(31, 41, 51, 0.06);
+}
+
+.contact-details h2,
+.contact-form-panel h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-details address {
+  margin-top: 1.25rem;
+  font-style: normal;
+}
+
+.contact-details address p {
+  margin-bottom: 1rem;
+}
+
+.contact-details address a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.whatsapp-link {
+  margin-top: 0.5rem;
+}
+
+.contact-form-panel form {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.contact-form-panel label {
+  font-weight: 700;
+}
+
+.contact-form-panel input,
+.contact-form-panel select,
+.contact-form-panel textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgba(31, 41, 51, 0.3);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact-form-panel textarea {
+  resize: vertical;
+}
+
+.contact-form-panel button {
+  justify-self: start;
+  margin-top: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav {
+    margin: 0;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .feature-grid,
+  .trip-grid,
+  .trip-matrix,
+  .popular-grid,
+  .helpful-links,
+  .trip-overview,
+  .river-trip {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .image-card img {
+    height: 240px;
+  }
 }
