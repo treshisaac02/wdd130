@@ -11,10 +11,10 @@
   <body>
     <header>
       <img src="images/logo.svg" alt="Rapid River Adventures logo">
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
           <li><a href="trips.html">Trips</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -24,20 +24,44 @@
     <main>
       <div class="hero">
         <img src="images/hero-rafting.svg" alt="Whitewater rafting adventure on a winding river">
-        <h1>Rapid River Adventures</h1>
+        <h1>White Water Rafting</h1>
         <article>
           <img src="images/client-happy.svg" alt="Happy raft guide smiling by the river">
           <p>We believe every river trip should spark confidence, connection, and unforgettable stories. Our experienced guides lead each journey with safety first, fun always, and a passion for helping you experience the wild beauty of nature from the water.</p>
         </article>
       </div>
 
-      <section>
-        <h2>History</h2>
-        <p>Rapid River Adventures began with a simple idea: share the thrill and beauty of Rivers State, Nigeria, with families, friends, and adventurers. From our first guided outings along the region's waterways, we've grown into a trusted local outfitter, combining knowledgeable guides, warm hospitality, and respect for the natural environment.</p>
+      <section class="history" aria-labelledby="history-heading">
+        <h2 id="history-heading">History</h2>
+        <p>Rapid River Adventures began with a simple idea: share the thrill and beauty of Rivers State, Nigeria, with families, friends, and adventurers.</p>
+        <img src="images/hero-rafting.svg" alt="Raft navigating a winding river">
+        <p>From our first guided outings along the region's waterways, we've grown into a trusted local outfitter, combining knowledgeable guides, warm hospitality, and respect for the natural environment.</p>
       </section>
 
-      <section>
-        <h2>Adventure Awaits You!</h2>
+      <section class="adventures" aria-labelledby="adventures-heading">
+        <h2 id="adventures-heading">Adventure Awaits You!</h2>
+        <div class="adventure-gallery">
+          <figure>
+            <img src="images/adventure-rapids.webp" alt="Raft team navigating a foaming rapid" width="480" height="320" loading="lazy" decoding="async">
+            <figcaption>Whitewater Rapids</figcaption>
+          </figure>
+          <figure>
+            <img src="images/adventure-kayak.webp" alt="Rafting team paddling through a rocky river" width="480" height="320" loading="lazy" decoding="async">
+            <figcaption>Big Mallard</figcaption>
+          </figure>
+          <figure>
+            <img src="images/adventure-raft.webp" alt="Yellow raft crossing clear river water" width="480" height="320" loading="lazy" decoding="async">
+            <figcaption>Family River Float</figcaption>
+          </figure>
+          <figure>
+            <img src="images/adventure-river-run.webp" alt="Guided raft trip through a rocky rapid" width="480" height="320" loading="lazy" decoding="async">
+            <figcaption>Half-Day Adventure</figcaption>
+          </figure>
+          <figure>
+            <img src="images/adventure-group.webp" alt="Raft team enjoying a whitewater adventure" width="480" height="320" loading="lazy" decoding="async">
+            <figcaption>Guided River Run</figcaption>
+          </figure>
+        </div>
         <p>Ready to explore Rivers State's waterways? Contact our team to discuss your trip plans, group, and preferred date.</p>
         <a class="btn primary" href="contact.html">Contact Us</a>
       </section>
