@@ -657,21 +657,31 @@ footer nav {
   color: var(--primary-color);
 }
 
-.contact-intro p,
-.contact-details p,
-.contact-form-panel > p {
+.contact-intro p {
   margin: 0.5rem 0;
   padding: 0;
 }
 
-.contact-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 1rem;
-  align-items: start;
+.contact-intro address {
+  margin-top: 1rem;
+  font-style: normal;
+  line-height: 1.8;
 }
 
-.contact-details,
+.contact-intro address a,
+.contact-map > a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.contact-map,
 .contact-form-panel {
   margin: 0;
   padding: 1.25rem;
@@ -681,27 +691,28 @@ footer nav {
   box-shadow: 0 6px 12px rgba(31, 41, 51, 0.06);
 }
 
-.contact-details h2,
+.contact-map {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  flex: 1;
+  border: 0;
+  border-radius: 8px;
+}
+
 .contact-form-panel h2 {
   margin-bottom: 0.5rem;
 }
 
-.contact-details address {
-  margin-top: 1.25rem;
-  font-style: normal;
-}
-
-.contact-details address p {
-  margin-bottom: 1rem;
-}
-
-.contact-details address a {
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.whatsapp-link {
-  margin-top: 0.5rem;
+.contact-form-panel > p {
+  margin: 0.5rem 0;
+  padding: 0;
 }
 
 .contact-form-panel form {
@@ -710,11 +721,11 @@ footer nav {
   margin-top: 1rem;
 }
 
-.contact-form-panel label {
+.contact-form-panel form > label {
   font-weight: 700;
 }
 
-.contact-form-panel input,
+.contact-form-panel input:not([type="radio"]):not([type="checkbox"]),
 .contact-form-panel select,
 .contact-form-panel textarea {
   width: 100%;
@@ -722,6 +733,34 @@ footer nav {
   border: 1px solid rgba(31, 41, 51, 0.3);
   border-radius: 6px;
   font: inherit;
+}
+
+.inquiry-purpose {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0.25rem 0;
+  padding: 0.75rem;
+  border: 1px solid rgba(31, 41, 51, 0.3);
+  border-radius: 6px;
+}
+
+.inquiry-purpose legend {
+  padding: 0 0.3rem;
+  font-weight: 700;
+}
+
+.inquiry-purpose label,
+.newsletter-opt-in {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 400;
+}
+
+.inquiry-purpose input,
+.newsletter-opt-in input {
+  width: auto;
+  margin: 0;
 }
 
 .contact-form-panel textarea {
@@ -735,6 +774,56 @@ footer nav {
   cursor: pointer;
   font: inherit;
   font-weight: 700;
+}
+
+.contact-team {
+  margin: 1.5rem 0 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(13, 92, 99, 0.12);
+  border-radius: 12px;
+}
+
+.contact-team > h2 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.team-card {
+  margin: 0;
+  padding: 0.75rem;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgba(13, 92, 99, 0.14);
+  border-radius: 8px;
+}
+
+.team-card figure {
+  margin: 0;
+}
+
+.team-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.team-card figcaption h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.team-card p {
+  margin: 0.6rem 0 0.3rem;
+  padding: 0;
 }
 
 @media (max-width: 700px) {
@@ -799,6 +888,14 @@ footer nav {
   }
 
   .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map iframe {
+    min-height: 280px;
+  }
+
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
