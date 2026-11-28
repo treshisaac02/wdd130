@@ -231,4 +231,100 @@
       </nav>
     </footer>
   </body>
+/* Newsletter */
+.newsletter {
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: var(--accent2-color);
+  text-align: center;
+}
+
+.newsletter-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 500px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.newsletter-form button {
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Trip photo cards */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.trip-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Trip comparison table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.trip-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.trip-matrix th,
+.trip-matrix td {
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trip-matrix thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-matrix tbody tr:nth-child(even) {
+  background-color: var(--accent2-color);
+}
+
+/* Mobile layout */
+@media screen and (max-width: 700px) {
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-card img {
+    height: auto;
+  }
+
+  .newsletter {
+    padding: 1rem;
+  }
+}
+
 </html>
