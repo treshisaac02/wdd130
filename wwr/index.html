@@ -1,47 +1,214 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rapid River Adventures offers exciting river rafting experiences for families, friends, and groups.">
+    <meta name="author" content="Isaac Edward Oko-Jaja">
+    <title>Rapid River Adventures | Home</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+  </head>
 
-/* Home page supporting images */
-.home-support {
-  padding: 2rem 1rem;
-  margin: 2rem auto;
-  text-align: center;
-}
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="Rapid River Adventures logo" class="logo">
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
 
-.home-support-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 1.5rem auto;
-}
+    <main>
+      <section class="hero">
+        <img src="images/hero-rafting.svg" alt="River rafting adventure">
+        <div class="hero-content">
+          <h1>Rapid River Adventures</h1>
+          <p>Experience the excitement. Explore the river. Create memories.</p>
+          <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </div>
+      </section>
 
-.home-support-card {
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-align: left;
-}
+      <section class="home-intro">
+        <h2>Adventure Awaits You!</h2>
+        <p>
+          Discover the excitement of river rafting with Rapid River Adventures.
+          Whether you are looking for a family outing, an exciting adventure,
+          or a memorable group experience, we have a trip for you.
+        </p>
+      </section>
 
-.home-support-card img {
-  display: block;
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
+      <section class="features">
+        <h2>Why Choose Rapid River Adventures?</h2>
 
-.home-support-card h3 {
-  margin-bottom: 0.75rem;
-}
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Experienced Guides</h3>
+            <p>
+              Our knowledgeable guides help make your river experience enjoyable
+              and memorable.
+            </p>
+          </article>
 
-@media screen and (max-width: 700px) {
-  .home-support-grid {
-    grid-template-columns: 1fr;
-  }
+          <article class="feature">
+            <h3>Exciting Adventures</h3>
+            <p>
+              Enjoy beautiful river scenery, exciting experiences, and
+              unforgettable moments.
+            </p>
+          </article>
 
-  .home-support-card img {
-    height: auto;
-    max-height: 320px;
-  }
-}
+          <article class="feature">
+            <h3>Everyone Is Welcome</h3>
+            <p>
+              We offer experiences for families, friends, individuals, and
+              groups looking to enjoy the outdoors.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-support">
+        <h2>Explore the Outdoors</h2>
+
+        <div class="home-support-grid">
+          <article class="home-support-card">
+            <img
+              src="images/adventure-river-run.webp"
+              alt="River adventure with participants enjoying the water"
+              loading="lazy"
+            >
+            <h3>Explore the River</h3>
+            <p>
+              Discover the beauty of the river while enjoying an outdoor
+              adventure with friends and family.
+            </p>
+          </article>
+
+          <article class="home-support-card">
+            <img
+              src="images/adventure-kayak.webp"
+              alt="Kayak on the river during a water adventure"
+              loading="lazy"
+            >
+            <h3>Adventure on the Water</h3>
+            <p>
+              Experience the excitement of the water and make memories that
+              will last.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trip-overview">
+        <h2>Our Adventures</h2>
+
+        <img
+          src="images/client-happy.svg"
+          alt="Happy adventure customers"
+          loading="lazy"
+        >
+
+        <p>
+          From relaxing family experiences to exciting river adventures,
+          Rapid River Adventures has something for everyone.
+        </p>
+
+        <div class="trip-grid">
+          <article class="trip-card">
+            <img
+              src="images/adventure-raft.webp"
+              alt="Group enjoying a rafting trip"
+              loading="lazy"
+            >
+            <h3>Family Float</h3>
+            <p>
+              Enjoy a memorable river experience with family and friends.
+            </p>
+          </article>
+
+          <article class="trip-card">
+            <img
+              src="images/adventure-rapids.webp"
+              alt="Raft moving through exciting river rapids"
+              loading="lazy"
+            >
+            <h3>Rapid Rush</h3>
+            <p>
+              Experience the excitement of a guided river adventure.
+            </p>
+          </article>
+
+          <article class="trip-card">
+            <img
+              src="images/adventure-group.webp"
+              alt="Group enjoying an outdoor rafting adventure"
+              loading="lazy"
+            >
+            <h3>Private Expedition</h3>
+            <p>
+              Plan a special adventure for your friends, family, or group.
+            </p>
+          </article>
+        </div>
+
+        <p>
+          <a href="trips.html" class="cta-button">View All Trips</a>
+        </p>
+      </section>
+
+      <section class="newsletter">
+        <h2>Join Our Adventure Newsletter</h2>
+        <p>
+          Subscribe to receive updates, adventure news, and information about
+          our upcoming trips.
+        </p>
+
+        <form class="newsletter-form" action="#" method="get">
+          <div>
+            <label for="newsletter-name">Your Name</label>
+            <input
+              type="text"
+              id="newsletter-name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="newsletter-email">Email Address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            >
+          </div>
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="home-cta">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Let us help you plan an unforgettable river experience.</p>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Rapid River Adventures | Isaac Edward Oko-Jaja</p>
+
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </footer>
+  </body>
+</html>
