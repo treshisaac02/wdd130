@@ -1,330 +1,47 @@
 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Rapid River Adventures | Home</title>
-
-    <meta
-      name="description"
-      content="Discover river adventures in Rivers State, Nigeria, with Rapid River Adventures. Explore family trips, guided adventures, and private group outings."
-    >
-
-    <meta name="author" content="Isaac Edward Oko-Jaja">
-
-    <link rel="stylesheet" href="styles/rafting.css">
-  </head>
-
-  <body>
-    <header>
-      <img
-        src="images/logo.svg"
-        alt="Rapid River Adventures logo"
-      >
-
-      <nav aria-label="Main navigation">
-        <ul>
-          <li>
-            <a href="index.html" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About Us</a>
-          </li>
-          <li>
-            <a href="trips.html">Trips</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section class="hero home-hero">
-        <img
-          src="images/hero-rafting.svg"
-          alt="River rafting adventure through scenic river surroundings"
-        >
-
-        <div class="hero-overlay">
-          <h1>Ride the Rapids. Live the Adventure.</h1>
-
-          <p>
-            From relaxed family outings to more active river adventures,
-            we help you plan a memorable day on the water in Rivers State,
-            Nigeria.
-          </p>
-
-          <div class="cta-group">
-            <a class="btn primary" href="trips.html">
-              Explore Trips
-            </a>
-
-            <a class="btn secondary" href="contact.html">
-              Book a Guide
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Introduction -->
-      <section class="page-intro">
-        <h2>Why Choose Rapid River Adventures?</h2>
-
-        <p>
-          We combine knowledgeable guides, quality equipment, and a love
-          for the outdoors to create memorable river experiences for
-          families, friends, and adventure seekers. Whether you are
-          planning your first river outing or looking for a group
-          adventure, our team is ready to help you explore your options.
-        </p>
-      </section>
-
-      <!-- Features -->
-      <section class="feature-grid">
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">★</div>
-
-          <h3>Experienced Guides</h3>
-
-          <p>
-            Our guides help visitors understand the river, prepare
-            for their outings, and enjoy their adventures with
-            appropriate guidance and safety planning.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">◇</div>
-
-          <h3>Scenic Routes</h3>
-
-          <p>
-            Discover waterways around Rivers State and ask our team
-            about suitable routes, scenery, and current river conditions.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon" aria-hidden="true">✦</div>
-
-          <h3>Lasting Memories</h3>
-
-          <p>
-            From family outings to group adventures, we help you
-            plan meaningful outdoor experiences filled with fun,
-            teamwork, and memorable moments.
-          </p>
-        </article>
-      </section>
-
-      <!-- Trip Overview -->
-      <section class="trip-overview">
-        <div class="text-block">
-          <h2>Adventure for Every Level</h2>
-
-          <p>
-            Tell us about your experience and the kind of outing you
-            want. We will discuss available options, local conditions,
-            suitability, and safety requirements before confirming
-            a trip.
-          </p>
-        </div>
-
-        <div class="trip-image">
-          <img
-            src="images/client-happy.svg"
-            alt="Happy rafting customer enjoying an outdoor river adventure"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-      </section>
-
-      <!-- Trip Options -->
-      <section class="trip-grid">
-        <article class="trip-card">
-          <h3>Family Float</h3>
-
-          <p>
-            Gentle water experiences, scenic views, and a relaxed
-            outing for families and those new to river adventures.
-            Availability and suitability depend on local conditions.
-          </p>
-        </article>
-
-        <article class="trip-card">
-          <h3>Rapid Rush</h3>
-
-          <p>
-            An exciting river experience for participants seeking
-            adventure, teamwork, and guided exploration of
-            appropriate routes.
-          </p>
-        </article>
-
-        <article class="trip-card">
-          <h3>Private Expedition</h3>
-
-          <p>
-            Personalized group outings for friends, families,
-            celebrations, and team activities. Contact us to discuss
-            your group and planning requirements.
-          </p>
-        </article>
-      </section>
-
-      <!-- Call to Action -->
-      <section class="newsletter">
-        <h2>Ready to Start Your Next River Story?</h2>
-
-        <p>
-          Talk with our team to discuss your interests and
-          plan your next river outing.
-        </p>
-
-        <a class="btn primary" href="contact.html">
-          Contact Us
-        </a>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>
-        &copy; 2026 | Rapid River Adventures |
-        Isaac Edward Oko-Jaja
-      </p>
-
-      <nav class="socialmedia" aria-label="Social media links">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Facebook"
-        >
-          <img src="images/facebook.svg" alt="">
-        </a>
-
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit LinkedIn"
-        >
-          <img src="images/linkedin.svg" alt="">
-        </a>
-
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Instagram"
-        >
-          <img src="images/instagram.svg" alt="">
-        </a>
-      </nav>
-    </footer>
-  </body>
-/* Newsletter */
-.newsletter {
-  padding: 2rem;
+/* Home page supporting images */
+.home-support {
+  padding: 2rem 1rem;
   margin: 2rem auto;
-  background-color: var(--accent2-color);
   text-align: center;
 }
 
-.newsletter-form {
+.home-support-grid {
   display: grid;
-  gap: 0.75rem;
-  max-width: 500px;
-  margin: 1rem auto;
-  text-align: left;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 1.5rem auto;
 }
 
-.newsletter-form input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #777;
-  border-radius: 5px;
-  font: inherit;
-}
-
-.newsletter-form button {
-  padding: 0.8rem;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Trip photo cards */
-.trip-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-
-.trip-card {
+.home-support-card {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-}
-
-.trip-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-/* Trip comparison table */
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.trip-matrix {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-
-.trip-matrix th,
-.trip-matrix td {
-  padding: 0.85rem;
-  border: 1px solid #ccc;
   text-align: left;
 }
 
-.trip-matrix thead {
-  background-color: var(--primary-color);
-  color: white;
+.home-support-card img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-.trip-matrix tbody tr:nth-child(even) {
-  background-color: var(--accent2-color);
+.home-support-card h3 {
+  margin-bottom: 0.75rem;
 }
 
-/* Mobile layout */
 @media screen and (max-width: 700px) {
-  .trip-grid {
+  .home-support-grid {
     grid-template-columns: 1fr;
   }
 
-  .trip-card img {
+  .home-support-card img {
     height: auto;
-  }
-
-  .newsletter {
-    padding: 1rem;
+    max-height: 320px;
   }
 }
-
-</html>
