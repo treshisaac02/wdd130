@@ -27,6 +27,73 @@ textarea:focus-visible {
   border-radius: 6px;
 }
 
+/* Trips page cards and photos */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.trip-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.trip-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Trips comparison table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.trip-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.trip-matrix th,
+.trip-matrix td {
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trip-matrix thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-matrix tbody tr:nth-child(even) {
+  background-color: var(--accent2-color);
+}
+
+/* Mobile Trips layout */
+@media screen and (max-width: 700px) {
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-card img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .trip-matrix th,
+  .trip-matrix td {
+    padding: 0.6rem;
+  }
+}
+
 /* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
