@@ -1,107 +1,45 @@
-
-/* Accessibility: visible keyboard focus */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid #f4d35e;
-  outline-offset: 3px;
+/* Home page supporting images */
+.home-support {
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  text-align: center;
 }
 
-/* Contact form feedback */
-#form-status {
-  padding: 0.75rem;
-  margin-top: 1rem;
-  background: rgba(13, 92, 99, 0.08);
-  border-left: 4px solid var(--primary-color);
-  border-radius: 5px;
-}
-
-/* Privacy notice */
-.privacy-notice {
-  font-size: 0.9rem;
-  color: var(--accent1-color);
-  background: rgba(244, 211, 94, 0.15);
-  padding: 0.75rem;
-  border-radius: 6px;
-}
-
-/* Trips page cards and photos */
-.trip-grid {
+.home-support-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 1.5rem auto;
 }
 
-.trip-card {
+.home-support-card {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
+  text-align: left;
 }
 
-.trip-card img {
+.home-support-card img {
   display: block;
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
-/* Trips comparison table */
-.table-container {
-  width: 100%;
-  overflow-x: auto;
+.home-support-card h3 {
+  margin-bottom: 0.75rem;
 }
 
-.trip-matrix {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-
-.trip-matrix th,
-.trip-matrix td {
-  padding: 0.85rem;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-.trip-matrix thead {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.trip-matrix tbody tr:nth-child(even) {
-  background-color: var(--accent2-color);
-}
-
-/* Mobile Trips layout */
 @media screen and (max-width: 700px) {
-  .trip-grid {
+  .home-support-grid {
     grid-template-columns: 1fr;
   }
 
-  .trip-card img {
+  .home-support-card img {
     height: auto;
-    max-height: 300px;
-  }
-
-  .trip-matrix th,
-  .trip-matrix td {
-    padding: 0.6rem;
-  }
-}
-
-/* Respect users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    max-height: 320px;
   }
 }
